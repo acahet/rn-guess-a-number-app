@@ -1,6 +1,12 @@
 import { useFonts } from 'expo-font';
 import React from 'react';
-import { TouchableOpacity, View, StyleSheet, Text } from 'react-native';
+import {
+	TouchableOpacity,
+	View,
+	StyleSheet,
+	Text,
+	Dimensions,
+} from 'react-native';
 import colors from '../constants/colors';
 import fonts from '../constants/fonts';
 
@@ -17,15 +23,16 @@ const styles = StyleSheet.create({
 	button: {
 		backgroundColor: colors.primary,
 		paddingVertical: 12,
-		paddingHorizontal: 30,
+		paddingHorizontal: 15,
 		borderRadius: 10,
-		width: '100%',
+		width: Dimensions.get('window').width / 4,
 	},
 	button_text: {
 		color: 'white',
 		fontFamily: fonts.regular,
-		fontSize: 16,
 		width: '100%',
+		textAlign: 'center',
+		fontSize: 17.5,
 	},
 });
 export default CustomButton;

@@ -114,8 +114,9 @@ const styles = StyleSheet.create({
 		textAlign: 'center',
 	},
 	card: {
-		width: 300,
-		maxWidth: '90%',
+		width: '80%',
+		minWidth: 300,
+		maxWidth: '95%',
 		alignItems: 'center',
 	},
 	summary: {
